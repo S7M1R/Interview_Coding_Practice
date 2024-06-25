@@ -1,0 +1,21 @@
+| Feature                  | Abstract Class                                      | Interface                                              |
+|--------------------------|-----------------------------------------------------|--------------------------------------------------------|
+| Instantiation            | Cannot be instantiated directly                    | Cannot be instantiated directly                       |
+| Method Types             | Abstract methods (must be implemented by subclasses), Concrete methods (can be inherited or overridden) | Abstract methods (before Java 8), Default methods (since Java 8), Static methods (since Java 8) |
+| Multiple Inheritance     | Supports single inheritance (extends only one class) | Supports multiple inheritance of type (can implement multiple interfaces) |
+| State                    | Can have instance variables and constructors       | Cannot have instance variables (before Java 8)         |
+| Purpose                  | Provides common behavior and state to subclasses   | Defines a contract for what classes can do            |
+
+
+
+object cloning in Java:
+
+Object Cloning: It's the process of creating an exact copy of an existing object.
+
+Cloneable Interface: Marks a class as allowing its objects to be cloned, enabling the clone() method.
+
+Shallow Copy: Default cloning where only the object and its primitive data are duplicated.
+
+Deep Copy: Custom cloning that duplicates all fields, including referenced objects.
+
+Usage: Provides a way to create independent copies of objects, useful for scenarios requiring duplicate but separate instances.
