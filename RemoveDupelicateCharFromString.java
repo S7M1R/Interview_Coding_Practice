@@ -10,4 +10,5 @@ public class RemoveDupelicateCharFromString {
         collect.entrySet().stream().filter(entry -> entry.getValue() == 1).sorted(Map.Entry.comparingByKey())
                 .forEach(System.out::println);
     }
+
 }
